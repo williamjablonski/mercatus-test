@@ -30,7 +30,6 @@ Set Local Executor
 
 Open Android Test App
   [Arguments]    ${appActivity}=${EMPTY}
-  #${executor}  set executor
   open application  ${executor}  automationName=${ANDROID_AUTOMATION_NAME}
   ...  app=${ANDROID_APP}  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION}
   ...  appPackage=${ANDROID_APP_PACKAGE}  appActivity=${appActivity}
@@ -38,10 +37,13 @@ Open Android Test App
 
 Navegate to App
   click element    //*[@text='App']
+  sleep  1
 Navegate to Activity
   click element    //*[@text='Activity']
+  sleep  1
 Navegate to Hello-Word
   click element    //*[@text='Hello World']
+  sleep  1
 Check Text Hello-world
   element should contain text  //*[@content-desc='Hello, World!']  Hello, World!
 	
