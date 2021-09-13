@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.5 on darwin)" generated="20210913 19:03:14.074" rpa="false" schemaversion="2">
+<suite id="s1" name="Test-Mercatus" source="/Users/admin/Projects/mercatus_mobile_aut/appium/sample-code/robotframework/tests/test-mercatus.robot">
+<test id="s1-t1" name="Mobile Test">
+<kw name="Set Local Executor">
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20210913 19:03:14.317" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20210913 19:03:14.317" endtime="20210913 19:03:14.318"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:14.316" endtime="20210913 19:03:14.319"/>
+</kw>
+<kw name="Open Android Test App">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${executor}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>app=${ANDROID_APP}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>platformVersion=${ANDROID_PLATFORM_VERSION}</arg>
+<arg>appPackage=${ANDROID_APP_PACKAGE}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>deviceName=${ANDROID_DEVICE_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210913 19:03:14.320" endtime="20210913 19:03:23.244"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:14.319" endtime="20210913 19:03:23.245"/>
+</kw>
+<kw name="Navegate to App">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//*[@text='App']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210913 19:03:23.248" level="INFO">Clicking element '//*[@text='App']'.</msg>
+<status status="PASS" starttime="20210913 19:03:23.246" endtime="20210913 19:03:25.251"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:23.245" endtime="20210913 19:03:25.251"/>
+</kw>
+<kw name="Navegate to Activity">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//*[@text='Activity']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210913 19:03:25.256" level="INFO">Clicking element '//*[@text='Activity']'.</msg>
+<status status="PASS" starttime="20210913 19:03:25.252" endtime="20210913 19:03:25.353"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:25.251" endtime="20210913 19:03:25.353"/>
+</kw>
+<kw name="Navegate to Hello-Word">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//*[@text='Hello World']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210913 19:03:25.358" level="INFO">Clicking element '//*[@text='Hello World']'.</msg>
+<status status="PASS" starttime="20210913 19:03:25.354" endtime="20210913 19:03:26.734"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:25.354" endtime="20210913 19:03:26.735"/>
+</kw>
+<kw name="Check Text Hello-world">
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>//*[@content-desc='Hello, World!']</arg>
+<arg>Hello, World!</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210913 19:03:26.740" level="INFO">Verifying element '//*[@content-desc='Hello, World!']' contains text 'Hello, World!'.</msg>
+<status status="PASS" starttime="20210913 19:03:26.736" endtime="20210913 19:03:27.848"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:26.735" endtime="20210913 19:03:27.848"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20210913 19:03:27.849" endtime="20210913 19:03:28.043"/>
+</kw>
+<status status="PASS" starttime="20210913 19:03:14.315" endtime="20210913 19:03:28.043"/>
+</test>
+<status status="PASS" starttime="20210913 19:03:14.076" endtime="20210913 19:03:28.044"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Mercatus">Test-Mercatus</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
