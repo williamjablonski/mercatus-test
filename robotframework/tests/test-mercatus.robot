@@ -37,11 +37,15 @@ Open Android Test App
   ...  deviceName=${ANDROID_DEVICE_NAME}
 
 Navegate to App
+  Wait Until Page Does Not Contain  //*[@text='App']
   click element    //*[@text='App']
 Navegate to Activity
+  Wait Until Page Does Not Contain  //*[@text='Activity']
   click element    //*[@text='Activity']
 Navegate to Hello-Word
+  Wait Until Page Does Not Contain  //*[@text='Hello World']
   click element    //*[@text='Hello World']
 Check Text Hello-world
+  Wait Until Page Does Not Contain  //*[@content-desc='Hello, World!']
   element should contain text  //*[@content-desc='Hello, World!']  Hello, World!
 	

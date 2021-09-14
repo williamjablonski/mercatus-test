@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.5 on darwin)" generated="20210913 19:03:14.074" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.1 (Python 3.9.5 on darwin)" generated="20210913 22:11:59.297" rpa="false" schemaversion="2">
 <suite id="s1" name="Test-Mercatus" source="/Users/admin/Projects/mercatus_mobile_aut/appium/sample-code/robotframework/tests/test-mercatus.robot">
 <test id="s1-t1" name="Mobile Test">
 <kw name="Set Local Executor">
 <kw name="Return From Keyword" library="BuiltIn">
 <arg>http://127.0.0.1:4723/wd/hub</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<msg timestamp="20210913 19:03:14.317" level="INFO">Returning from the enclosing user keyword.</msg>
-<status status="PASS" starttime="20210913 19:03:14.317" endtime="20210913 19:03:14.318"/>
+<msg timestamp="20210913 22:11:59.559" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20210913 22:11:59.559" endtime="20210913 22:11:59.560"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:14.316" endtime="20210913 19:03:14.319"/>
+<status status="PASS" starttime="20210913 22:11:59.558" endtime="20210913 22:11:59.560"/>
 </kw>
 <kw name="Open Android Test App">
 <kw name="Open Application" library="AppiumLibrary">
@@ -27,54 +27,74 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20210913 19:03:14.320" endtime="20210913 19:03:23.244"/>
+<status status="PASS" starttime="20210913 22:11:59.563" endtime="20210913 22:12:09.701"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:14.319" endtime="20210913 19:03:23.245"/>
+<status status="PASS" starttime="20210913 22:11:59.561" endtime="20210913 22:12:09.702"/>
 </kw>
 <kw name="Navegate to App">
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>//*[@text='App']</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20210913 22:12:09.703" endtime="20210913 22:12:10.081"/>
+</kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@text='App']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20210913 19:03:23.248" level="INFO">Clicking element '//*[@text='App']'.</msg>
-<status status="PASS" starttime="20210913 19:03:23.246" endtime="20210913 19:03:25.251"/>
+<msg timestamp="20210913 22:12:10.083" level="INFO">Clicking element '//*[@text='App']'.</msg>
+<status status="PASS" starttime="20210913 22:12:10.081" endtime="20210913 22:12:10.257"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:23.245" endtime="20210913 19:03:25.251"/>
+<status status="PASS" starttime="20210913 22:12:09.702" endtime="20210913 22:12:10.257"/>
 </kw>
 <kw name="Navegate to Activity">
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>//*[@text='Activity']</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20210913 22:12:10.258" endtime="20210913 22:12:11.694"/>
+</kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@text='Activity']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20210913 19:03:25.256" level="INFO">Clicking element '//*[@text='Activity']'.</msg>
-<status status="PASS" starttime="20210913 19:03:25.252" endtime="20210913 19:03:25.353"/>
+<msg timestamp="20210913 22:12:11.700" level="INFO">Clicking element '//*[@text='Activity']'.</msg>
+<status status="PASS" starttime="20210913 22:12:11.694" endtime="20210913 22:12:13.158"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:25.251" endtime="20210913 19:03:25.353"/>
+<status status="PASS" starttime="20210913 22:12:10.258" endtime="20210913 22:12:13.159"/>
 </kw>
 <kw name="Navegate to Hello-Word">
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>//*[@text='Hello World']</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20210913 22:12:13.160" endtime="20210913 22:12:13.235"/>
+</kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@text='Hello World']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20210913 19:03:25.358" level="INFO">Clicking element '//*[@text='Hello World']'.</msg>
-<status status="PASS" starttime="20210913 19:03:25.354" endtime="20210913 19:03:26.734"/>
+<msg timestamp="20210913 22:12:13.238" level="INFO">Clicking element '//*[@text='Hello World']'.</msg>
+<status status="PASS" starttime="20210913 22:12:13.236" endtime="20210913 22:12:13.317"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:25.354" endtime="20210913 19:03:26.735"/>
+<status status="PASS" starttime="20210913 22:12:13.159" endtime="20210913 22:12:13.317"/>
 </kw>
 <kw name="Check Text Hello-world">
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>//*[@content-desc='Hello, World!']</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20210913 22:12:13.318" endtime="20210913 22:12:14.443"/>
+</kw>
 <kw name="Element Should Contain Text" library="AppiumLibrary">
 <arg>//*[@content-desc='Hello, World!']</arg>
 <arg>Hello, World!</arg>
 <doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20210913 19:03:26.740" level="INFO">Verifying element '//*[@content-desc='Hello, World!']' contains text 'Hello, World!'.</msg>
-<status status="PASS" starttime="20210913 19:03:26.736" endtime="20210913 19:03:27.848"/>
+<msg timestamp="20210913 22:12:14.447" level="INFO">Verifying element '//*[@content-desc='Hello, World!']' contains text 'Hello, World!'.</msg>
+<status status="PASS" starttime="20210913 22:12:14.444" endtime="20210913 22:12:14.505"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:26.735" endtime="20210913 19:03:27.848"/>
+<status status="PASS" starttime="20210913 22:12:13.317" endtime="20210913 22:12:14.505"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20210913 19:03:27.849" endtime="20210913 19:03:28.043"/>
+<status status="PASS" starttime="20210913 22:12:14.506" endtime="20210913 22:12:14.704"/>
 </kw>
-<status status="PASS" starttime="20210913 19:03:14.315" endtime="20210913 19:03:28.043"/>
+<status status="PASS" starttime="20210913 22:11:59.557" endtime="20210913 22:12:14.705"/>
 </test>
-<status status="PASS" starttime="20210913 19:03:14.076" endtime="20210913 19:03:28.044"/>
+<status status="PASS" starttime="20210913 22:11:59.299" endtime="20210913 22:12:14.707"/>
 </suite>
 <statistics>
 <total>
